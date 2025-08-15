@@ -1,12 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
 import Profile from "./pages/Profile";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Signin from "./pages/Signin";
-import Signup from "./pages/Signup";
 import Header from "./components/Header";
+import SignUp from "./pages/SignUp";
 
 export default function App() {
   return (
@@ -15,7 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/signin" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
+       <Route path="/signup" element={<SignUp/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
